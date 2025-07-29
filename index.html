@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Priyanka Javani | Portfolio</title>
-      
-        <!-- Poppins Font from Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-      
-        <!-- CSS File -->
-        <link rel="stylesheet" href="style.css" />
-      </head>      
-<body>
 
- <!-- NAVIGATION BAR -->
-<header>
-  <div class="container header-content">
-    <h1 class="logo">Priyanka Javani</h1>
-    <nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priyanka Javani | Portfolio</title>
+
+  <!-- Google Fonts - Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container header-content">
+      <h1 class="logo">Priyanka Javani</h1>
+
+      <!-- Desktop Nav -->
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills & Experience</a></li>
@@ -25,18 +27,45 @@
         <li><a href="#leadership">Leadership</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-  </div>
-</header>
 
+      <!-- Mobile Menu Icon -->
+      <div id="menu-icon" class="menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 0 640 640" width="28" fill="white">
+          <path d="M96 160C96 142.3 110.3 128 128 128H512C529.7 128 544 142.3 544 160S529.7 192 512 192H128C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288H512C529.7 288 544 302.3 544 320S529.7 352 512 352H128C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512H128C110.3 512 96 497.7 96 480S110.3 448 128 448H512C529.7 448 544 462.3 544 480z"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Slidebar Menu (Mobile) -->
+    <div class="slidebar-wrapper" id="sidebar-wrapper">
+      <!-- Close Button -->
+      <div id="close-slidebar" class="close-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 0 640 640" width="28" fill="white">
+          <path d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"/>
+        </svg>
+      </div>
+
+      <!-- Sidebar Links -->
+      <ul class="slidebar">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills & Experience</a></li>
+        <li><a href="#projects">Projects & Certificates</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header> 
 
   <!-- HOME SECTION -->
   <section id="home">
     <div class="container home-content">
       <div class="home-text">
         <h2>Hello, I'm Priyanka 👋</h2>
-        <p>Tech enthusiast with a passion for turning creative ideas into interactive, user-friendly web interfaces. I enjoy solving real-world problems through clean code and meaningful design.</p>
-        <p>As a Computer Engineering student at Silver Oak University, I’ve worked on UI/UX designs and branding initiatives that reflect my ability to combine functionality with aesthetics. I'm currently exploring new technologies to strengthen my foundation and move forward confidently in the tech field.</p>
+        <p>Tech enthusiast with a passion for turning creative ideas into interactive, user-friendly web interfaces. I
+          enjoy solving real-world problems through clean code and meaningful design.</p>
+        <p>As a Computer Engineering student at Silver Oak University, I’ve worked on UI/UX designs and branding
+          initiatives that reflect my ability to combine functionality with aesthetics. I'm currently exploring new
+          technologies to strengthen my foundation and move forward confidently in the tech field.</p>
       </div>
       <!-- Optional profile image -->
       <div class="home-image">
@@ -44,20 +73,23 @@
       </div>
     </div>
   </section>
-<!-- ABOUT SECTION -->
+  <!-- ABOUT SECTION -->
   <section id="about">
     <div class="container">
-        <div class="about-text">
-      <h2>About Me</h2>
-      <p>I’m a curious and creative tech learner with a background in both design and development. I enjoy exploring new technologies and turning ideas into clean, functional user experiences.</p>
-      
-      <h3>Education</h3>
-      <ul class="education-list">
-        <li><strong>B.Tech in Computer Engineering</strong> – Silver Oak University<br><span>Oct 2021 – Present | CGPA: 8.36/10</span></li>
-        <li><strong>H.S.C – Science (PCM)</strong> – Shree Satya Sai Vidyalaya<br><span>Jun 2020 – Aug 2021 | 83.2%</span></li>
-        <li><strong>S.S.C</strong> – Shree Satya Sai Vidyalaya<br><span>Jun 2018 – Mar 2019 | 86.5%</span></li>
-      </ul>
-    </div>  
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I’m a curious and creative tech learner with a background in both design and development. I enjoy exploring
+          new technologies and turning ideas into clean, functional user experiences.</p>
+
+        <h3>Education</h3>
+        <ul class="education-list">
+          <li><strong>B.Tech in Computer Engineering</strong> – Silver Oak University<br><span>Oct 2021 – Present |
+              CGPA: 8.36/10</span></li>
+          <li><strong>H.S.C – Science (PCM)</strong> – Shree Satya Sai Vidyalaya<br><span>Jun 2020 – Aug 2021 |
+              83.2%</span></li>
+          <li><strong>S.S.C</strong> – Shree Satya Sai Vidyalaya<br><span>Jun 2018 – Mar 2019 | 86.5%</span></li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -80,69 +112,79 @@
     </div>
   </section>
 
- <!-- EXPERIENCE SECTION -->
+  <!-- EXPERIENCE SECTION -->
 
   <section id="experience">
     <div class="container">
       <h2>Experience</h2>
-  
+
       <div class="exp">
         <h3>Frontend Development Intern — CompuGhost Complete Solution (CCS)</h3>
         <p><strong>Jan 2025 – Present</strong><br>
-          Trained in frontend technologies like HTML, CSS, Bootstrap, and JavaScript. Built responsive UI for e-commerce and product management systems. Collaborated with senior developers to enhance user experience.</p>
+          Trained in frontend technologies like HTML, CSS, Bootstrap, and JavaScript. Built responsive UI for e-commerce
+          and product management systems. Collaborated with senior developers to enhance user experience.</p>
       </div>
-  
+
       <div class="exp">
         <h3>Team Coordinator & Technical Support — Safal Softcom</h3>
         <p><strong>Mar 2025 – Jun 2025</strong><br>
-          Acted as a bridge between tech and management teams to ensure smooth communication. Handled technical queries and supported software applications. Improved workflows and project delivery through coordination.</p>
+          Acted as a bridge between tech and management teams to ensure smooth communication. Handled technical queries
+          and supported software applications. Improved workflows and project delivery through coordination.</p>
       </div>
-  
+
       <div class="exp">
         <h3>Graphic Designer — SSIP Azadi Ka Amrit Mahotsav Hackathon</h3>
         <p><strong>Oct 2022 – Feb 2023</strong><br>
-          Designed user-friendly UI screens and promotional materials for hackathon participants. Focused on improving usability and engagement through creative visual design.</p>
+          Designed user-friendly UI screens and promotional materials for hackathon participants. Focused on improving
+          usability and engagement through creative visual design.</p>
       </div>
-  
+
       <!-- Optional IEEE Reference -->
       <div class="exp">
         <h3>Creative Chairperson (Past) — IEEE Student Branch, Silver Oak University</h3>
         <p><strong>Apr 2024 – Apr 2025</strong><br>
-          Led a creative team and contributed to branding for multiple events. (See details in <a href="#leadership">Leadership section</a>.)</p>
+          Led a creative team and contributed to branding for multiple events. (See details in <a
+            href="#leadership">Leadership section</a>.)</p>
       </div>
-  
+
     </div>
-  </section>  
-  
+  </section>
+
   <!-- PROJECTS SECTION -->
 
   <section id="projects">
     <div class="container">
       <h2>Projects</h2>
       <div class="project-grid">
-  
+
         <div class="project-card">
           <h3>AIcollab (Minor Project)</h3>
-          <p>A team project focused on building a centralized platform for various AI tools. I contributed to the UI layout and front-end design using HTML and CSS. Screenshots available upon request.</p>
+          <p>A team project focused on building a centralized platform for various AI tools. I contributed to the UI
+            layout and front-end design using HTML and CSS. Screenshots available upon request.</p>
           <a href="#">Screenshots (Coming Soon)</a>
         </div>
-  
+
         <div class="project-card">
           <h3>Product Management Website (Internship)</h3>
-          <p>Worked at CompuGhost Complete Solution (CCS) as a frontend intern. I contributed by designing UI screens and handling small frontend tasks for their internal product management system.</p>
+          <p>Worked at CompuGhost Complete Solution (CCS) as a frontend intern. I contributed by designing UI screens
+            and handling small frontend tasks for their internal product management system.</p>
           <a href="#">Private Project</a>
         </div>
-  
+
         <div class="project-card">
           <h3>Foody Buddy (UI/UX)</h3>
-          <p>A clean and minimalistic food ordering UI designed in Figma as part of my college UI/UX practice projects.</p>
-          <a href="https://www.behance.net/gallery/230518910/Foody-Buddy-UI-Design-for-a-Food-App" target="_blank">View Prototype</a>
+          <p>A clean and minimalistic food ordering UI designed in Figma as part of my college UI/UX practice projects.
+          </p>
+          <a href="https://www.behance.net/gallery/230518910/Foody-Buddy-UI-Design-for-a-Food-App" target="_blank">View
+            Prototype</a>
         </div>
-  
+
         <div class="project-card">
           <h3>Vacational Central (UI/UX)</h3>
-          <p>Travel booking and vacation planning app UI with interactive Figma prototype. Designed for a semester college project.</p>
-          <a href="https://www.behance.net/gallery/230519340/Vacational-Central-Travel-Website-UI-Design" target="_blank">View Prototype</a>
+          <p>Travel booking and vacation planning app UI with interactive Figma prototype. Designed for a semester
+            college project.</p>
+          <a href="https://www.behance.net/gallery/230519340/Vacational-Central-Travel-Website-UI-Design"
+            target="_blank">View Prototype</a>
         </div>
       </div>
     </div>
@@ -154,7 +196,7 @@
     <div class="container">
       <h2>Certificates</h2>
       <p>I’ve earned several certificates through my academic journey, technical courses, and event contributions.</p>
-  
+
       <ul class="cert-list">
         <li>Content Writer – TEDx Silver Oak University (2022)</li>
         <li>Graphic Designer – SSIP Hackathon (2023)</li>
@@ -162,25 +204,29 @@
         <li>Project Presentation – IRFSR Conference (2024)</li>
         <li>SQL: The Complete Developer Guide – Udemy</li>
       </ul>
-  
-      <a class="view-all-btn" href="https://drive.google.com/drive/folders/1f4S0fPSUrd4RzGWIu0zMFhOx8fHnDzk7?usp=sharing" target="_blank">View All Certificates</a>
+
+      <a class="view-all-btn"
+        href="https://drive.google.com/drive/folders/1f4S0fPSUrd4RzGWIu0zMFhOx8fHnDzk7?usp=sharing" target="_blank">View
+        All Certificates</a>
     </div>
   </section>
 
-    <!-- LEADERSHIP SECTION -->
+  <!-- LEADERSHIP SECTION -->
 
   <section id="leadership">
     <div class="container">
       <h2>Leadership Highlights & Achievements</h2>
-  
+
       <div class="highlight">
         <h3>Creative Committee Chairperson – IEEE Student Branch</h3>
-        <p>Led the creative direction and visual branding for various IEEE events at Silver Oak University. My work played a key role in elevating the branch's engagement and recognition at state and national levels.</p>
+        <p>Led the creative direction and visual branding for various IEEE events at Silver Oak University. My work
+          played a key role in elevating the branch's engagement and recognition at state and national levels.</p>
       </div>
-  
+
       <div class="highlight">
         <h3>Project Showcase at IRFSR Conference</h3>
-        <p>Presented my minor project <strong>AIcollab</strong> at the IRFSR International Conference, demonstrating real-world applications of AI tool integration.</p>
+        <p>Presented my minor project <strong>AIcollab</strong> at the IRFSR International Conference, demonstrating
+          real-world applications of AI tool integration.</p>
       </div>
     </div>
   </section>
@@ -190,59 +236,91 @@
   <section id="organizations">
     <div class="container">
       <h2>Organizations & Involvement</h2>
-  
+
       <div class="org">
         <h3>IEEE Silver Oak University Student Branch</h3>
         <p><strong>Creative Committee Chairperson (April 2024 - April 2025)</strong><br>
-          Led design and branding projects, and actively contributed to event visuals and promotional activities. Now continuing as an active member.</p>
+          Led design and branding projects, and actively contributed to event visuals and promotional activities. Now
+          continuing as an active member.</p>
       </div>
-  
+
       <div class="org">
         <h3>AWS Cloud Club – Silver Oak University</h3>
         <p><strong>Member (April 2024 – Present)</strong><br>
-          Helped organize AWS workshops, tech talks, and community networking events with AWS Community Heroes. Supported peers in exploring cloud technologies.</p>
+          Helped organize AWS workshops, tech talks, and community networking events with AWS Community Heroes.
+          Supported peers in exploring cloud technologies.</p>
       </div>
-  
+
       <div class="org">
         <h3>Google Developer Groups (GDG) – Silver Oak University</h3>
         <p><strong>Member (April 2024 – Present)</strong><br>
-          Contributed to planning GDG events, tech sessions, and developer workshops. Focused on building a collaborative tech community.</p>
+          Contributed to planning GDG events, tech sessions, and developer workshops. Focused on building a
+          collaborative tech community.</p>
       </div>
-  
+
       <div class="org">
         <h3>TEDx Silver Oak University</h3>
         <p><strong>Content & Creative Team (2022)</strong><br>
-          Wrote event content and supported visual and stage design during the TEDx event organization at Silver Oak University.</p>
+          Wrote event content and supported visual and stage design during the TEDx event organization at Silver Oak
+          University.</p>
       </div>
-  
+
     </div>
   </section>
-  
-    <!-- CONTACT SECTION -->
+
+  <!-- CONTACT SECTION -->
 
   <section id="contact">
     <div class="container">
       <h2>Contact Me</h2>
       <p>Interested in collaborating or have a project idea? I’d love to connect!</p>
-  
+
       <ul class="contact-info">
-        <li><strong>GitHub Portfolio:</strong> <a href="https://priyanka-javani.github.io/Portfolio" target="_blank">priyanka-javani.github.io/Portfolio</a></li>
+        <li><strong>GitHub Portfolio:</strong> <a href="https://priyanka-javani.github.io/Portfolio"
+            target="_blank">priyanka-javani.github.io/Portfolio</a></li>
         <li><strong>Email:</strong> <a href="mailto:priyankahjavani23@gmail.com">priyankahjavani23@gmail.com</a></li>
         <li><strong>Location:</strong> Ahmedabad, Gujarat, India</li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/priyankajavani/" target="_blank">linkedin.com/@priyanka-javani</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/priyanka-javani" target="_blank">github.com/@priyankajavani</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/priyankajavani/"
+            target="_blank">linkedin.com/@priyanka-javani</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/priyanka-javani"
+            target="_blank">github.com/@priyankajavani</a></li>
       </ul>
-  
-      <a href="https://drive.google.com/file/d/1fpGp-rr6clHp4X3MPI9o3Qzdtj_gc6xw/view?usp=sharing" class="btn" target="_blank">Download My Resume</a>
+
+      <a href="https://drive.google.com/file/d/1fpGp-rr6clHp4X3MPI9o3Qzdtj_gc6xw/view?usp=sharing" class="btn"
+        target="_blank">Download My Resume</a>
     </div>
   </section>
 
   <!-- FOOTER -->
-<footer>
-  <div class="container">
-    <p>&copy; 2025 Priyanka Javani. All rights reserved.</p>
-  </div>
-</footer>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Priyanka Javani. All rights reserved.</p>
+    </div>
+  </footer>
 
+  <script>
+    const menuIcon = document.getElementById("menu-icon");
+    const sidebarWrapper = document.getElementById("sidebar-wrapper");
+    const closeBtn = document.getElementById("close-slidebar");
+
+    // Show sidebar
+    menuIcon.addEventListener("click", () => {
+      sidebarWrapper.classList.add("active");
+    });
+
+    // Hide sidebar
+    closeBtn.addEventListener("click", () => {
+      sidebarWrapper.classList.remove("active");
+    });
+
+    // Close on link click (optional)
+    const sidebarLinks = sidebarWrapper.querySelectorAll("a");
+    sidebarLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        sidebarWrapper.classList.remove("active");
+      });
+    });
+  </script>
 </body>
+
 </html>
